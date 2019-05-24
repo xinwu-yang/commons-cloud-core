@@ -1,9 +1,12 @@
 package com.cxria.gaiamount.commons.cloud.core;
 
+/**
+ * @author xinwuy
+ */
 public class CloudCredentials {
     private String accessKeyId;
-
     private String accessKeySecret;
+    private ServerType serverType;
 
     public String getAccessKeyId() {
         return accessKeyId;
@@ -21,8 +24,17 @@ public class CloudCredentials {
         this.accessKeySecret = accessKeySecret;
     }
 
-    public CloudCredentials(String accessKeyId, String accessKeySecret) {
+    public ServerType getServerType() {
+        return serverType;
+    }
+
+    public void setServerType(ServerType serverType) {
+        this.serverType = serverType;
+    }
+
+    public CloudCredentials(String accessKeyId, String accessKeySecret, ServerType serverType) {
         this.accessKeyId = accessKeyId;
         this.accessKeySecret = accessKeySecret;
+        this.serverType = serverType;
     }
 }
