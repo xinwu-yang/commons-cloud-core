@@ -6,11 +6,15 @@ package com.cxria.gaiamount.commons.cloud.core;
 
 public enum ServerType {
     /**
-     * 亚马逊
+     * Amazon Web Services
      */
     AWS,
     /**
      * 阿里云
      */
-    ALIYUN
+    ALIYUN,
+    /**
+     * 腾讯云, 微信API
+     */
+    TENCENT
 }
