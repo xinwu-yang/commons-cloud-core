@@ -5,3 +5,8 @@ target
 *.iws
 *.iml
 *.ipr
+
+### VSCode ###
+.project
+.settings
+.classpath
